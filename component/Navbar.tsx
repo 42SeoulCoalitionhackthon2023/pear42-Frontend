@@ -1,25 +1,35 @@
 import Link from 'next/link'
-import styles from '/styles/component/Navbar.module.scss'
+import SearchBar from './SearchBar'
+import styles from '/styles/Navbar.module.scss'
+import {FaCrown} from 'react-icons/fa'
+import {BsFillBarChartLineFill} from 'react-icons/bs'
+import {MdSettings} from 'react-icons/md'
+import logoImage from '/public/logo.png'
+import Image from 'next/image'
 
 export default function Navbar() {
   return (
     <nav className={styles.navbar}>
     	<ul>
         <Link href="/">
-          PEAR42
+					<div className={styles.logo}>
+						<Image src={logoImage} alt="logo" fill/>
+					</div>
         </Link>
 			</ul>
 			<ul>
-		  	SearchBar{/* <SearchBar /> */}
+				<div className={styles.searchBar}>
+		  		<SearchBar />
+				</div>
 			</ul>
 			<ul>
-		  	Ranking
+				<FaCrown className={styles.icon}/> {/* Ranking */}
 			</ul>
 			<ul>
-			  Statistics
+			  <BsFillBarChartLineFill className={styles.icon}/> {/* Statistics */}
 			</ul>
 			<ul>
-			  Settings
+			  <MdSettings className={styles.icon}/>{/* Settings */}
 			</ul>
  	 </nav>
   )
