@@ -7,27 +7,27 @@ $icon-size: 2vh;
 $icon-margin: 2vw;
 
 .navbar {
-	display: flex;
-	align-items: center;
-	height: $navbar-height;
-	background-color: $main-color;
-	color: #fff;
+  display: flex;
+  align-items: center;
+  height: $navbar-height;
+  background-color: $main-color;
+  color: #fff;
 
-	.logo {
-		width: $logo-size;
-		height: $logo-size;
-		position: relative;
-	}
-	.searchBar{
-		width: $searchbar-width;
-		height: $searchbar-height;
-	}
-	.icon{
-		width: $icon-size;
-		height: $icon-size;
-		position: relative;
-	}
-	ul {
-		margin-left: $icon-margin;
-	}
+  .logo {
+    width: $logo-size;
+    height: $logo-size;
+    position: relative;
+  }
+  .searchBar {
+    width: $searchbar-width;
+    height: $searchbar-height;
+  }
+  .icon {
+    width: $icon-size;
+    height: $icon-size;
+    position: relative;
+  }
+  ul {
+    margin-left: $icon-margin;
+  }
 }

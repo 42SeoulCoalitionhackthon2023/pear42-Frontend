@@ -1,10 +1,6 @@
-import { Inter } from 'next/font/google'
-import styles from '/styles/Home.module.css'
+import { Inter } from 'next/font/google';
+import styles from '/styles/Home.module.css';
 
 export default function Home() {
-  return (
-    <div className={styles.main}>
-	
-    </div>
-  )
+  return <div className={styles.main}></div>;
 }

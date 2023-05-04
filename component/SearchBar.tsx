@@ -1,8 +1,8 @@
-import { useEffect, useRef, useState } from "react";
-import styles from "../styles/SearchBar.module.scss";
+import { useEffect, useRef, useState } from 'react';
+import styles from '../styles/SearchBar.module.scss';
 
 export default function SearchBar() {
-  const [intraId, setIntraId] = useState<string>("");
+  const [intraId, setIntraId] = useState<string>('');
   const [dropdown, setDropDown] = useState<boolean>(false);
   const searchBarRef = useRef<HTMLDivElement>(null);
 
@@ -30,26 +30,26 @@ export default function SearchBar() {
   };
 
   useEffect(() => {
-    document.addEventListener("mousedown", handleClickOutside);
+    document.addEventListener('mousedown', handleClickOutside);
     return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener('mousedown', handleClickOutside);
     };
   }, []);
 
   return (
     <div ref={searchBarRef} className={styles.searchBarWrap}>
-			<input
-				type="text"
-				value={intraId}
-				placeholder="search by intra id"
-				onChange={inputHandler}
-				onFocus={() => setDropDown(true)}
-				onKeyDown={(e) => {
-					if (e.key === "Enter") {
-						goDetail();
-					}
-				}}
-			/>
+      <input
+        type="text"
+        value={intraId}
+        placeholder="search by intra id"
+        onChange={inputHandler}
+        onFocus={() => setDropDown(true)}
+        onKeyDown={(e) => {
+          if (e.key === 'Enter') {
+            goDetail();
+          }
+        }}
+      />
     </div>
   );
 }
