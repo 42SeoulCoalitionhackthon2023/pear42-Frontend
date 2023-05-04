@@ -41,23 +41,15 @@ export default function SearchBar() {
 			<input
 				type="text"
 				value={intraId}
+				placeholder="search by intra id"
 				onChange={inputHandler}
 				onFocus={() => setDropDown(true)}
 				onKeyDown={(e) => {
-				if (e.key === "Enter") {
-					goDetail();
-				}
+					if (e.key === "Enter") {
+						goDetail();
+					}
 				}}
 			/>
-			{dropdown && (
-				<div onClick={goDetail}>
-					<div>
-					{intraId
-						? `검색 - ${intraId}`
-						: "인트라 아이디를 입력해주세요!"}
-					</div>
-				</div>
-			)}
     </div>
   );
 }
