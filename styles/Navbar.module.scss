@@ -1,0 +1,27 @@
+@import 'styles/common.scss';
+
+.navbar {
+  display: flex;
+  align-items: center;
+  height: $navbar-height;
+  background-color: $main-color;
+  color: #fff;
+
+  .logo {
+    width: $logo-size;
+    height: $logo-size;
+    position: relative;
+  }
+  .searchBar {
+    width: $searchbar-width;
+    height: $searchbar-height;
+  }
+  .icon {
+    width: $icon-size;
+    height: $icon-size;
+    position: relative;
+  }
+  ul {
+    margin-left: $icon-margin;
+  }
+}
