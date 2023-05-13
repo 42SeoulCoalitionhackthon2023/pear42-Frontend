@@ -6,7 +6,7 @@
   height: $navbar-height;
   background-color: $main-color;
   color: #fff;
-
+  justify-content: space-between;
   .logo {
     width: $logo-size;
     height: $logo-size;
@@ -23,5 +23,14 @@
   }
   ul {
     margin-left: $icon-margin;
+  }
+  .leftWrapper{
+    display: flex;
+    align-items: center;
+  }
+  .rightWrapper{
+    display: flex;
+    align-items: center;
+    margin-right: $icon-margin;
   }
 }

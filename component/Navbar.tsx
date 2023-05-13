@@ -10,6 +10,7 @@ import Image from 'next/image';
 export default function Navbar() {
   return (
     <nav className={styles.navbar}>
+      <div className={styles.leftWrapper}>
       <ul>
         <Link href="/">
           <div className={styles.logo}>
@@ -28,10 +29,11 @@ export default function Navbar() {
       <ul>
         <BsFillBarChartLineFill className={styles.icon} /> {/* Statistics */}
       </ul>
-      <ul>
+      </div>
+      <div className={styles.rightWrapper}>
         <MdSettings className={styles.icon} />
         {/* Settings */}
-      </ul>
+      </div>
     </nav>
   );
 }
