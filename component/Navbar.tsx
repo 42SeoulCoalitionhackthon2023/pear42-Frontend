@@ -11,24 +11,16 @@ export default function Navbar() {
   return (
     <nav className={styles.navbar}>
       <div className={styles.leftWrapper}>
-      <ul>
-        <Link href="/">
-          <div className={styles.logo}>
+        <div className={styles.logo}>
+          <Link href="/">
             <Image src={logoImage} alt="logo" fill />
-          </div>
-        </Link>
-      </ul>
-      <ul>
+          </Link>
+        </div>
         <div className={styles.searchBar}>
           <SearchBar />
         </div>
-      </ul>
-      <ul>
         <FaCrown className={styles.icon} /> {/* Ranking */}
-      </ul>
-      <ul>
         <BsFillBarChartLineFill className={styles.icon} /> {/* Statistics */}
-      </ul>
       </div>
       <div className={styles.rightWrapper}>
         <MdSettings className={styles.icon} />

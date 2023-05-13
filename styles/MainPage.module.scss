@@ -1,59 +1,53 @@
 @import 'styles/common.scss';
 
-.mainPageWrapper{
+.mainPageWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  //min-width
+  height: $mainProfile-height;
+  background-color: white;
+  .profileInfoWrapper {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 100%;
+    justify-content: space-around;
+    width: 50%;
     //min-width
-    height: $mainProfile-height;
-    background-color: white;
-    .profileInfoWrapper{
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        width: 50%;
-        //min-width
-        height: 100%;
-        .profileImage{
-            background-color: black;
-            width: 10rem;
-            height: 10rem;
-            //반응형으로 크기 조정필요
-            border-radius: 50%;
-        }
-        .profileInfo{
-            width: 50%;
-            height: 80%;
-            border-radius: 5px;
-            background-color: rgba(0,0,0,0.2);
-            .intraId{
-                font-size: 1.8rem;
-                font-weight: 900;
-            }
-            .blackhole{
-    
-            }
-            .circle{
-    
-            }
-            .totalEval{
-    
-            }
-            .weeklyEval{
-    
-            }
-        }
+    height: 100%;
+    .profileImage {
+      background-color: black;
+      width: 20vh;
+      height: 20vh;
+      //반응형으로 크기 조정필요
+      border-radius: 50%;
     }
-    .profileGrade{
-        width: 50%;
-        //min-width
-        height: 100%;
-        .gradePic{
-
-        }
-        .gradeGraph{
-
-        }
+    .profileInfo {
+      width: 50%;
+      height: 80%;
+      border-radius: 5px;
+      background-color: rgba(0, 0, 0, 0.2);
+      .intraId {
+        font-size: 1.8rem;
+        font-weight: 900;
+      }
+      .blackhole {
+      }
+      .circle {
+      }
+      .totalEval {
+      }
+      .weeklyEval {
+      }
     }
+  }
+  .profileGrade {
+    width: 50%;
+    //min-width
+    height: 100%;
+    .gradePic {
+    }
+    .gradeGraph {
+    }
+  }
 }

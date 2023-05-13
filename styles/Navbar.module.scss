@@ -24,11 +24,13 @@
   ul {
     margin-left: $icon-margin;
   }
-  .leftWrapper{
+  .leftWrapper {
     display: flex;
     align-items: center;
+    width: 55%;
+    justify-content: space-around;
   }
-  .rightWrapper{
+  .rightWrapper {
     display: flex;
     align-items: center;
     margin-right: $icon-margin;
