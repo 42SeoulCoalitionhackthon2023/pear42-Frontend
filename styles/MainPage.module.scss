@@ -12,42 +12,94 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 50%;
+    padding: 0.5rem;
     //min-width
     height: 100%;
-    .profileImage {
-      background-color: black;
-      width: 20vh;
-      height: 20vh;
+    .profileImageWrapper {
+      min-width: 17vh;
+      min-height: 17vh;
+      position: relative;
       //반응형으로 크기 조정필요
-      border-radius: 50%;
+      .profileImage {
+        border-radius: 50%;
+      }
     }
     .profileInfo {
+      display: flex;
+      flex-direction: column;
       width: 50%;
       height: 80%;
+      padding: 0 1rem;
       border-radius: 5px;
+      margin-left: 2vw;
       background-color: rgba(0, 0, 0, 0.2);
-      .intraId {
-        font-size: 1.8rem;
+      .idWrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .intraId {
+          font-size: 1.8rem;
+          font-weight: 900;
+        }
+        .blackhole {
+        }
+      }
+      .campusWrapper {
+        display: flex;
+        flex-direction: column;
+        font-size: 1.2rem;
         font-weight: 900;
       }
-      .blackhole {
-      }
-      .circle {
-      }
-      .totalEval {
-      }
-      .weeklyEval {
+      .evalWrapper {
+        display: flex;
+        align-items: flex-end;
+        .totalEval {
+        }
+        .weeklyEval {
+        }
       }
     }
   }
   .profileGrade {
-    width: 50%;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
     //min-width
     height: 100%;
-    .gradePic {
+    width: 35rem;
+    .gradePicWrapper {
+      height: 10rem;
+      width: 10rem;
     }
-    .gradeGraph {
+    .rates {
+      display: flex;
+      width: 20rem;
+      .gradeGraph {
+        display: flex;
+        flex-direction: column;
+        .progressbar {
+          width: 20rem;
+          height: 2rem;
+        }
+      }
+      .gradeInfo {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        .wordCount {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          font-size: 1rem;
+        }
+        .timeCount {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          font-size: 1rem;
+        }
+      }
     }
   }
 }
