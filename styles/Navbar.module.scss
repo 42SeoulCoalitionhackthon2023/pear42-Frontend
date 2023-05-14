@@ -19,10 +19,8 @@
   .icon {
     width: $icon-size;
     height: $icon-size;
-    position: relative;
-  }
-  ul {
     margin-left: $icon-margin;
+    position: relative;
   }
   .leftWrapper {
     display: flex;

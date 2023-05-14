@@ -32,6 +32,9 @@ export default function MainPage() {
     wordCount: 100,
     timeCount: 120,
   });
+
+  const coalitionCover =
+    'https://cdn.intra.42.fr/coalition/cover/86/gon_cover.jpg';
   const {
     profileImage,
     intraId,
@@ -48,7 +51,15 @@ export default function MainPage() {
 
   //api call
   return (
-    <div className={styles.mainPageWrapper}>
+    <div
+      className={styles.mainPageWrapper}
+      style={{
+        backgroundImage: `url(${coalitionCover})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center center',
+        backgroundRepeat: 'no-repeat',
+      }}
+    >
       <div className={styles.profileInfoWrapper}>
         <div className={styles.profileImageWrapper}>
           <Image
@@ -81,11 +92,14 @@ export default function MainPage() {
         </div>
       </div>
       <div className={styles.profileGrade}>
-        <div className={styles.gradePic}></div>
         <div className={styles.rates}>
-          <div className={styles.gradePicWrapper}>
-            <Image src={gradePic} alt="grade" width={100} height={100} />
-          </div>
+          <Image
+            className={styles.gradePic}
+            src={gradePic}
+            alt="grade"
+            width={200}
+            height={200}
+          />
           <div className={styles.gradeGraph}>
             <div>Outstanding Flag (%)</div>
             <progress
@@ -99,15 +113,15 @@ export default function MainPage() {
               value={rate}
               max="100"
             ></progress>
-          </div>
-          <div className={styles.gradeInfo}>
-            <div className={styles.wordCount}>
-              <div>{wordCount}</div>
-              <div>Comment (word count)</div>
-            </div>
-            <div className={styles.timeCount}>
-              <div>{timeCount}</div>
-              <div>Feedback Time (min)</div>
+            <div className={styles.gradeInfo}>
+              <div className={styles.wordCount}>
+                <div>{wordCount}</div>
+                <div>Comment (word count)</div>
+              </div>
+              <div className={styles.timeCount}>
+                <div>{timeCount}</div>
+                <div>Feedback Time (min)</div>
+              </div>
             </div>
           </div>
         </div>
