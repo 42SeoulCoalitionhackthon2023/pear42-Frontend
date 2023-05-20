@@ -1,4 +1,4 @@
-import styles from '/styles/MainPage.module.scss';
+import styles from '/styles/MainProfile.module.scss';
 import Image from 'next/image';
 import gradePic from '/public/gradePic.png';
 import { useState } from 'react';
@@ -17,7 +17,7 @@ type MainProfileInfo = {
   timeCount: number;
 };
 
-export default function MainPage() {
+export default function MainProfile() {
   const [mainProfileInfo, setMainProfileInfo] = useState<MainProfileInfo>({
     profileImage:
       'https://cdn.intra.42.fr/users/9e1614c6297185aabebe3006c3a984ef/small_sungwook.jpg',

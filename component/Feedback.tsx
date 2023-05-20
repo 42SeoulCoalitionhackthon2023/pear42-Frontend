@@ -27,14 +27,19 @@ export default function Feedback() {
   return (
     <div className={styles.feedbackWrap}>
       <div className={styles.selectWrap}>
-        <div>FEEDBACK LOG</div>
-        <div>Circle</div>
-        <div>Subject</div>
+        <div className={styles.feedbackTitle}>Feedback Log</div>
+        <select className={styles.select}>
+          <option>Circle</option>
+        </select>
+        <select className={styles.select}>
+          <option>Subject</option>
+        </select>
+        <button className={styles.select}>Search</button>
       </div>
       <div>
         {feedback.map((log, index) => {
           return (
-            <div key={log.pid}>
+            <div key={log.pid} className={styles.logWrap}>
               <div>
                 <div>
                   {log.corrector} evaluated {log.corrected} scheduled on{' '}

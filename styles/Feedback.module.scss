@@ -6,9 +6,26 @@
   background-color: #ebfaea;
   .selectWrap {
     display: flex;
-    justify-content: space-between;
     padding: 1rem;
-    width: 40%;
     height: 10vh;
+    .feedbackTitle {
+      display: flex;
+      align-items: center;
+      width: 33%;
+      font-size: 2rem;
+    }
+    .select {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 33%;
+      font-size: 2rem;
+      border-radius: 10px;
+    }
+  }
+  .logWrap {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
   }
 }
