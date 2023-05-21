@@ -17,8 +17,8 @@
     //min-width
     height: 100%;
     .profileImageWrapper {
-      min-width: 17vh;
-      min-height: 17vh;
+      width: 15rem;
+      height: 15rem;
       margin-left: 5vw;
       position: relative;
       //반응형으로 크기 조정필요
@@ -29,18 +29,18 @@
     .profileInfo {
       display: flex;
       flex-direction: column;
-      width: 50%;
+      justify-content: space-around;
+      width: 20rem;
       height: 80%;
       padding: 0 1rem;
-      border-radius: 5px;
       margin-left: 5vw;
-      background-color: rgba(0, 0, 0, 0.6);
+      @include profileInfoBackground;
       .idWrapper {
         display: flex;
         align-items: center;
         justify-content: space-between;
         .intraId {
-          font-size: 1.8rem;
+          font-size: 2.4rem;
           font-weight: 900;
         }
         .blackhole {
@@ -49,12 +49,13 @@
       .campusWrapper {
         display: flex;
         flex-direction: column;
-        font-size: 1.2rem;
+        font-size: 1.6rem;
         font-weight: 900;
       }
       .evalWrapper {
         display: flex;
         align-items: flex-end;
+        font-size: 1.6rem;
         .totalEval {
         }
         .weeklyEval {
@@ -65,30 +66,38 @@
   .profileGrade {
     display: flex;
     align-items: center;
-    padding: 0.5rem;
+    // padding: 0.5rem;
     //min-width
     height: 100%;
-    width: 40rem;
+    width: 45rem;
     .gradePic {
-      height: 10rem;
-      width: 10rem;
+      height: 12rem;
+      width: 14rem;
+      @include profileInfoBackground;
     }
     .rates {
       display: flex;
-      width: 20rem;
+      height: 80%;
       .gradeGraph {
         display: flex;
+        justify-content: space-between;
         flex-direction: column;
-        margin-left: 5vw;
-        .progressbar {
-          width: 20rem;
-          height: 2rem;
+        margin-left: 3vw;
+        .progress {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 25rem;
+          height: 3rem;
+          @include profileInfoBackground;
         }
       }
       .gradeInfo {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
+        height: 7rem;
+        @include profileInfoBackground;
         .wordCount {
           display: flex;
           flex-direction: column;
@@ -100,6 +109,10 @@
           flex-direction: column;
           align-items: center;
           font-size: 1rem;
+        }
+        .label {
+          font-size: 2rem;
+          margin-bottom: 0.5rem;
         }
       }
     }

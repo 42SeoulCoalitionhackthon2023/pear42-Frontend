@@ -1,9 +1,14 @@
 $main-color: #1a2718;
-$navbar-height: 8vh;
-$searchbar-height: 5vh;
-$searchbar-width: 35vw;
-$logo-size: 6vh;
-$icon-size: 4vh;
+$navbar-height: 5rem;
+$searchbar-height: 3.5rem;
+$searchbar-width: 35rem;
+$logo-size: 4.5rem;
+$icon-size: 3rem;
 $icon-margin: 20px;
-$mainProfile-height: 25vh;
-$feedback-height: 67vh;
+$mainProfile-height: 20rem;
+$feedback-height: 55rem;
+
+@mixin profileInfoBackground {
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.7);
+}

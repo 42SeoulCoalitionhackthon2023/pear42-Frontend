@@ -101,25 +101,15 @@ export default function MainProfile() {
             height={200}
           />
           <div className={styles.gradeGraph}>
-            <div>Outstanding Flag (%)</div>
-            <progress
-              className={styles.progressbar}
-              value={outstanding}
-              max="100"
-            ></progress>
-            <div>Rate above 80 (%)</div>
-            <progress
-              className={styles.progressbar}
-              value={rate}
-              max="100"
-            ></progress>
+            <div className={styles.progress}>Rate above 80 (%)</div>
+            <div className={styles.progress}>Outstanding Flag (%)</div>
             <div className={styles.gradeInfo}>
               <div className={styles.wordCount}>
-                <div>{wordCount}</div>
+                <div className={styles.label}>{wordCount}</div>
                 <div>Comment (word count)</div>
               </div>
               <div className={styles.timeCount}>
-                <div>{timeCount}</div>
+                <div className={styles.label}>{timeCount}</div>
                 <div>Feedback Time (min)</div>
               </div>
             </div>
