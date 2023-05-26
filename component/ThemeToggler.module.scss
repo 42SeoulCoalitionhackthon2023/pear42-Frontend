@@ -1,0 +1,65 @@
+.ThemeToggler {
+  &.bg-gray-800 {
+    background-color: #1f2937;
+  }
+  
+  &.dark {
+    &.bg-gray-50 {
+      background-color: #f9fafb;
+    }
+    
+    &.hover {
+      &.bg-gray-300 {
+        background-color: #e5e7eb;
+      }
+    }
+  }
+  
+  &.transition-all {
+    transition-duration: 100ms;
+  }
+  
+  &.text-white {
+    color: #ffffff;
+  }
+  
+  &.dark {
+    &.text-gray-800 {
+      color: #1f2937;
+    }
+  }
+  
+  &.px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  
+  &.py-2 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  
+  &.text-2xl {
+    font-size: 1.5rem;
+  }
+  
+  &.md {
+    &.text-4xl {
+      @media (min-width: 768px) {
+        font-size: 2.5rem;
+      }
+    }
+  }
+  
+  &.rounded-lg {
+    border-radius: 0.5rem;
+  }
+  
+  &.absolute {
+    position: absolute;
+  }
+  
+  &.bottom-32 {
+    bottom: 8rem;
+  }
+}
