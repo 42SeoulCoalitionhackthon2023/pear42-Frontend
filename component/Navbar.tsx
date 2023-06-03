@@ -6,6 +6,7 @@ import { BsFillBarChartLineFill } from 'react-icons/bs';
 import { MdSettings } from 'react-icons/md';
 import logoImage from '/public/logo.png';
 import Image from 'next/image';
+import ThemeToggler from './ThemeToggler';
 
 export default function Navbar() {
   return (
