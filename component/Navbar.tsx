@@ -11,31 +11,22 @@ import ThemeToggler from './ThemeToggler';
 export default function Navbar() {
   return (
     <nav className={styles.navbar}>
-      <ul>
-        <Link href="/">
-          <div className={styles.logo}>
+      <div className={styles.leftWrapper}>
+        <div className={styles.logo}>
+          <Link href="/">
             <Image src={logoImage} alt="logo" fill />
-          </div>
-        </Link>
-      </ul>
-      <ul>
+          </Link>
+        </div>
         <div className={styles.searchBar}>
           <SearchBar />
         </div>
-      </ul>
-      <ul>
         <FaCrown className={styles.icon} /> {/* Ranking */}
-      </ul>
-      <ul>
         <BsFillBarChartLineFill className={styles.icon} /> {/* Statistics */}
-      </ul>
-      <ul>
+      </div>
+      <div className={styles.rightWrapper}>
         <MdSettings className={styles.icon} />
         {/* Settings */}
-      </ul>
-			<ul>
-				<ThemeToggler />
-			</ul>
+      </div>
     </nav>
   );
 }
