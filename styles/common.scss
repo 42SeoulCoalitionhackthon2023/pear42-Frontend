@@ -1,4 +1,32 @@
-$main-color: #1a2718;
+[data-theme='light'] {
+  $--color-primary-accent: #2614c7;
+  $--color-primary: #000;
+  $--color-button: #3d486c;
+  $--color-paragraph: #797979;
+  $--color-button-text: rgb(255, 255, 255);
+  $--color-background: #fff;
+  $--color-anchor: #000aff;
+}
+
+[data-theme='dark'] {
+  $--color-primary-accent: #00ff4c;
+  $--color-primary: #fff;
+  $--color-button: #00ff4c;
+  $--color-paragraph: #8a8a8a;
+  $--color-button-text: rgb(0, 0, 0);
+  $--color-background: #000;
+}
+
+// const
+$color-const-main-background: #1a2718;
+$color-const-main-primary: #fff;
+$color-const-box-background: #fff;
+
+// variable
+$color-background: var(--color-background);
+$color-primary: var(--color-primary);
+$color-button: var(--color-button);
+
 $navbar-height: 5rem;
 $searchbar-height: 3.5rem;
 $searchbar-width: 35rem;
@@ -12,3 +40,4 @@ $feedback-height: 55rem;
   border-radius: 5px;
   background-color: rgba(0, 0, 0, 0.7);
 }
+
